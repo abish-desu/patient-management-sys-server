@@ -18,6 +18,23 @@ model User {
   email String @unique
   hash  String
 
+  firstName String?
+  lastName  String?
+}
+
+model Patient {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
   firstName String
   lastName  String
+
+  email   String   @unique
+  contact String
+  dob     DateTime
+
+  workdays  String
+  startTime DateTime
+  endTime   DateTime
 }
