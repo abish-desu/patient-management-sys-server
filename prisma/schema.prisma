@@ -35,6 +35,6 @@ model Patient {
   dob     DateTime
 
   workdays  String
-  startTime DateTime
-  endTime   DateTime
+  startTime String
+  endTime   String
 }

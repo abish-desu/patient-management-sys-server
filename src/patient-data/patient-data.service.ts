@@ -15,8 +15,8 @@ export class PatientDataService {
           dob: new Date(dto.dob).toISOString(),
           contact: dto.contact,
           workdays: dto.workDays,
-          startTime: new Date(dto.startTime).toISOString(),
-          endTime: new Date(dto.endTime).toISOString(),
+          startTime: dto.startTime,
+          endTime: dto.endTime,
         },
       });
       return patient;
@@ -62,8 +62,8 @@ export class PatientDataService {
           dob: new Date(dto.dob).toISOString(),
           contact: dto.contact,
           workdays: dto.workDays,
-          startTime: new Date(dto.startTime).toISOString(),
-          endTime: new Date(dto.endTime).toISOString(),
+          startTime: dto.startTime,
+          endTime: dto.endTime,
         },
       });
       return patient;

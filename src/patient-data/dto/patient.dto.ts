@@ -21,8 +21,8 @@ export class PatientDto {
   workDays: string;
 
   @IsNotEmpty()
-  startTime: Date;
+  startTime: string;
 
   @IsNotEmpty()
-  endTime: Date;
+  endTime: string;
 }
