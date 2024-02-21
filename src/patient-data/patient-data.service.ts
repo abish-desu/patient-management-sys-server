@@ -80,7 +80,7 @@ export class PatientDataService {
       });
       return { message: "Patient data deleted successfully" };
     } catch (error) {
-      console.log(error);
+      throw new Error("Error occured while deleting patient data");
     }
   }
 }
